@@ -1,0 +1,10 @@
+<div *ngIf="visible" class="border">
+  <h3>{{name}}</h3>
+  <p>
+    <ng-content></ng-content>
+  </p>
+
+  <button (click)="hide()">hide</button>
+  <p> count : {{count}}</p>
+  <button (click)="increment()">inc</button>
+</div>

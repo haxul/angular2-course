@@ -8,6 +8,9 @@ import { CountryListComponent } from './country-list/country-list.component';
 import { CounterHostComponent } from './counter-host/counter-host.component';
 import { CounterComponent } from './counter/counter.component';
 import {TimerComponent} from './timer/timer.component';
+import { MessageBoxComponent } from './message-box/message-box.component';
+import { MessageHostComponent } from './message-host/message-host.component';
+import {FormsModule} from "@angular/forms"
 
 @NgModule({
   declarations: [
@@ -16,16 +19,19 @@ import {TimerComponent} from './timer/timer.component';
     CountryListComponent,
     CounterHostComponent,
     CounterComponent,
-    TimerComponent
+    TimerComponent,
+    MessageBoxComponent,
+    MessageHostComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-        {path: 'list1', component: LanguagesComponent},
-        {path: 'list2', component: CountryListComponent},
-        {path: '', redirectTo: 'list1', pathMatch: 'full'}
+        {path: "list1", component: LanguagesComponent},
+        {path: "list2", component: CountryListComponent},
+        {path: "", redirectTo: "list1", pathMatch: "full"}
       ]
-    )
+    ),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
