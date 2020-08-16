@@ -1,0 +1,8 @@
+<h1>counter-host works!</h1>
+<app-counter></app-counter>
+<app-counter [name] = "'hello wordl'"></app-counter>
+<app-counter [name] ="'world'" [countValue]="10" [step]="10"></app-counter>
+<p> timer 1</p>
+<app-timer (tick)="tickHandler($event)" name="'hello component'"></app-timer>
+<p> timer 2</p>
+<app-timer></app-timer>
