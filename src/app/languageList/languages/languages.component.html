@@ -1,0 +1,11 @@
+<ul>
+  <li *ngFor="let phrase of phrases"
+      (click)="onSelect(phrase)">
+    {{phrase.text}}
+  </li>
+</ul>
+
+<div *ngIf="selectedLanguage">
+  {{selectedLanguage}}
+</div>
+
