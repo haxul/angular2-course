@@ -10,7 +10,9 @@ import { CounterComponent } from './counter/counter.component';
 import {TimerComponent} from './timer/timer.component';
 import { MessageBoxComponent } from './message-box/message-box.component';
 import { MessageHostComponent } from './message-host/message-host.component';
-import {FormsModule} from "@angular/forms"
+import {FormsModule} from "@angular/forms";
+import { BlockComponent } from './block/block.component';
+import { BlockHostComponent } from './block-host/block-host.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import {FormsModule} from "@angular/forms"
     CounterComponent,
     TimerComponent,
     MessageBoxComponent,
-    MessageHostComponent
+    MessageHostComponent,
+    BlockComponent,
+    BlockHostComponent
   ],
   imports: [
     BrowserModule,
