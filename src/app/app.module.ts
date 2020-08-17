@@ -14,6 +14,7 @@ import {FormsModule} from "@angular/forms";
 import { BlockComponent } from './block/block.component';
 import { BlockHostComponent } from './block-host/block-host.component';
 import { BindingBlockComponent } from './binding-block/binding-block.component'
+import {DataService} from "./data.service";
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { BindingBlockComponent } from './binding-block/binding-block.component'
     ),
     FormsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

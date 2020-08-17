@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {DataService} from "../data.service";
 
 @Component({
   selector: 'app-binding-block',
@@ -7,14 +8,16 @@ import {Component, OnInit} from '@angular/core';
 })
 export class BindingBlockComponent implements OnInit {
 
-  constructor() {
+  constructor(private dataService: DataService) {
   }
 
   checked: boolean = false
-  range: string
-  handle(e:any) :void {
-    console.log(e.target.value)
+  range: number
+
+  handle(): void {
+    this.dataService.setInput(this.range)
   }
+
   ngOnInit(): void {
 
   }

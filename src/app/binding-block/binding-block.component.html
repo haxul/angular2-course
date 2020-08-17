@@ -1,1 +1,5 @@
-<input type="number" [disabled]="checked" #xInput (input)="handle($event)">
+<h3>binding block</h3>
+
+<input type="number"  [(ngModel)]="range">
+
+<button (click)="handle()"> show range</button>
