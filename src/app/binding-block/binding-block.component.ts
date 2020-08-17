@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-binding-block',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BindingBlockComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
+  checked: boolean = false
+  range: string
+  handle(e:any) :void {
+    console.log(e.target.value)
+  }
   ngOnInit(): void {
+
   }
 
 }
