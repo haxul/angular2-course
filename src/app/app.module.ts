@@ -33,8 +33,8 @@ import {DataService} from "./data.service";
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-        {path: "list1", component: LanguagesComponent},
-        {path: "list2", component: CountryListComponent},
+        {path: "block-host", component: BlockHostComponent},
+        {path: "list", component: CountryListComponent},
         {path: "", redirectTo: "list1", pathMatch: "full"}
       ]
     ),
