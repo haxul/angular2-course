@@ -12,7 +12,8 @@ import { MessageBoxComponent } from './message-box/message-box.component';
 import { MessageHostComponent } from './message-host/message-host.component';
 import {FormsModule} from "@angular/forms";
 import { BlockComponent } from './block/block.component';
-import { BlockHostComponent } from './block-host/block-host.component'
+import { BlockHostComponent } from './block-host/block-host.component';
+import { BindingBlockComponent } from './binding-block/binding-block.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BlockHostComponent } from './block-host/block-host.component'
     MessageBoxComponent,
     MessageHostComponent,
     BlockComponent,
-    BlockHostComponent
+    BlockHostComponent,
+    BindingBlockComponent
   ],
   imports: [
     BrowserModule,
